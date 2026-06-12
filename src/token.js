@@ -1,10 +1,10 @@
 /**
  * VIREL_COzen Design Tokens
  * 
- * Una arquitectura visual y conceptual donde:
- * - La sombra se disuelve en calma
- * - La luz se vuelve pensamiento
- * - El movimiento se convierte en respiración
+ * A visual and conceptual architecture where:
+ * - Shadow dissolves into calm
+ * - Light becomes thought
+ * - Movement converts into breath
  * 
  * Token system for minimalist, meditative, and aesthetic editorial content
  */
