@@ -1,0 +1,38 @@
+---
+/**
+ * Props:
+ * - label: descripción del estilo (ej. "Title / Bold")
+ * - size: tamaño en rem (ej. "2rem")
+ * - weight: peso tipográfico (ej. "700")
+ * - text: texto a mostrar
+ */
+const { label, size, weight, text } = Astro.props;
+---
+
+<div class="type-sample">
+  <div class="meta">{label}</div>
+  <div class="content" style={`font-size:${size}; font-weight:${weight};`}>
+    {text}
+  </div>
+</div>
+
+<style>
+  .type-sample {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-sm);
+    border-left: 2px solid var(--accent);
+  }
+
+  .meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: var(--space-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .content {
+    color: var(--text);
+    line-height: var(--lh-normal);
+  }
+</style>
