@@ -1,0 +1,49 @@
+---
+/**
+ * Props:
+ * - label: nombre del espaciado (ej. "md")
+ * - value: valor del espaciado (ej. "1rem")
+ */
+const { label, value } = Astro.props;
+---
+
+<div class="spacing-item">
+  <div class="line" style={`width:${value}`}></div>
+  <div class="info">
+    <div class="label">{label}</div>
+    <div class="value">{value}</div>
+  </div>
+</div>
+
+<style>
+  .spacing-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .line {
+    height: 4px;
+    background: var(--accent);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .value {
+    font-size: 0.9rem;
+    color: var(--text);
+  }
+</style>
