@@ -1,6 +1,8 @@
-export const bg = '#f9f9f9';
-export const text = '#1a1a1a';
-export const textMuted = '#4a4a4a';
-export const accent = '#7c3aed';
-export const border = '#e0e0e0';
-export const light = '#f5f5f5';
+export const color = {
+  bg: "#0e0e0e",
+  text: "#e6e6e6",
+  textMuted: "#b3b3b3",
+  accent: "#9f7fff",
+  border: "#2a2a2a",
+  light: "#ffffff",
+};
