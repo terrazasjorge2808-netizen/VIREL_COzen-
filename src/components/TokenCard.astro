@@ -1,0 +1,60 @@
+---
+/**
+ * Props:
+ * - label: nombre del token (ej. "accent")
+ * - value: valor del token (ej. "#9f7fff")
+ * - preview: opcional — color o estilo visual para mostrar
+ */
+const { label, value, preview } = Astro.props;
+---
+
+<div class="token-card">
+  <div class="preview" style={`background:${preview || value}`}></div>
+
+  <div class="info">
+    <div class="label">{label}</div>
+    <div class="value">{value}</div>
+  </div>
+</div>
+
+<style>
+  .token-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-left: 2px solid var(--accent);
+    background: rgba(255,255,255,0.02);
+    border-radius: 6px;
+    transition: all 200ms ease;
+  }
+
+  .token-card:hover {
+    background: rgba(255,255,255,0.04);
+    transform: translateX(4px);
+  }
+
+  .preview {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .value {
+    font-size: 1rem;
+    color: var(--text);
+  }
+</style>
