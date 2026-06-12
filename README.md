@@ -1,6 +1,8 @@
 # VIREL_COzen
 
-Framework editorial contemplativo basado en Astro + React para la creación de contenido visual minimalista, modular y técnicamente escalable. Diseñado para expandir el ecosistema VIREL_CO con una arquitectura limpia, silenciosa y orientada a la producción de piezas editoriales de alta estética.
+Framework editorial contemplativo basado en Astro + React para la creación de contenido visual minimalista, modular y técnicamente escalable. Diseñado para expandir el ecosistema VIREL_CO con una arquitectura sólida, extensible y coherente.
+
+**Repositorio:** https://github.com/terrazasjorge2808-netizen/VIREL_COzen-
 
 ---
 
@@ -50,3 +52,63 @@ Framework editorial contemplativo basado en Astro + React para la creación de c
 npm install
 npm run dev
 ```
+
+---
+
+## 🜁 Roadmap Técnico
+
+### Fase 1 — Core del Sistema  
+- Design tokens (color, luz, sombra, espaciado).  
+- Tipografías base y escalas modulares.  
+- Configuración Astro + React + MDX.  
+- Estructura inicial de carpetas.  
+- Presets contemplativos.
+
+### Fase 2 — Módulo de Estilos  
+- Sistema de CSS tokens.  
+- Paleta editorial luz/sombra.  
+- Layouts base.  
+- Grillas silenciosas.  
+- Componentes tipográficos.
+
+### Fase 3 — Componentes UI  
+- Bloques editoriales.  
+- Overlays contemplativos.  
+- Contenedores con ritmo lento.  
+- Navegación minimalista.  
+- Footer silencioso.
+
+### Fase 4 — Motor de Animación  
+- Microtransiciones lentas.  
+- Fade-in respirado.  
+- Scroll suave.  
+- Animaciones basadas en presencia.  
+- Integración con Motion o GSAP.
+
+### Fase 5 — Sistema de Assets  
+- Biblioteca de imágenes contemplativas.  
+- Presets de luz y textura.  
+- Organización por narrativa.  
+- Optimización para Astro.  
+- Integración con generadores visuales.
+
+### Fase 6 — Scripts Narrativos  
+- Guiones editoriales.  
+- Estructuras contemplativas.  
+- Plantillas MDX.  
+- Layouts dinámicos.  
+- Sistema de "rituales".
+
+### Fase 7 — Optimización y Rendimiento  
+- Carga diferida.  
+- Optimización de imágenes.  
+- Reducción de JS.  
+- Auditoría de rendimiento.  
+- Accesibilidad contemplativa.
+
+### Fase 8 — Documentación y Expansión  
+- Documentación técnica.  
+- Guía de contribución.  
+- Ejemplos de uso.  
+- Plantillas para módulos.  
+- Roadmap 2026–2027.
