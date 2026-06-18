@@ -1,0 +1,41 @@
+---
+import type { Theme, Variant } from '../lib/typography';
+import { getTypographyToken } from '../lib/typography';
+
+interface Props {
+  text?: string;
+  variant?: Variant;
+  theme?: Theme;
+}
+
+const {
+  text = 'Texto de ejemplo',
+  variant = 'title',
+  theme = 'light',
+} = Astro.props as Props;
+
+const token = getTypographyToken(variant);
+const isDark = theme === 'dark';
+---
+
+<section class:list={['type-sample', isDark && 'dark']}>
+  <p
+    style={`font-size:${token.size};font-weight:${token.weight};`}
+  >
+    {text}
+  </p>
+</section>
+
+<style>
+  .type-sample {
+    padding: 24px;
+    border-radius: 16px;
+    background: white;
+    border: 1px solid #e2e8f0;
+  }
+
+  .dark {
+    background: #111827;
+    color: white;
+  }
+</style>
